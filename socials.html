@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - Justin Faderanga</title>
+  <link rel="stylesheet" href="css/socials.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="home-link">Home</a>
+      </div>
+
+      <div class="nav-toggle">
+          <img src="css/assets/menu.png"/>
+        </div>
+
+      <ul class="nav-right">
+        <li><a href="about.html">About Me</a></li>
+          <li><a href="price.html">Pricelist</a></li>
+          <li><a href="rules.html">Rules</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="socials.html" class="active">Socials</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="services-section">
+    <h2>Reach Out!</h2>
+    <h3>You can contact me here if you have any questions! Just click the icon.</h3>
+    <div class="services-grid">
+       
+      <div class="service-box">
+        <div class="icon"> <a href="https://www.facebook.com/share/16EmHuKpFB/" target="_blank" rel="noopener noreferrer">
+        <img src="css/assets/facebook (1).png"/></div></a>
+      </div>
+    </div>
+  </section>
+ <script>
+  document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+
+      // Ignore anchor or empty links
+      if (!href || href.startsWith('#')) return;
+
+      e.preventDefault();
+
+      const grid = document.querySelector('.services-grid');
+      const heading = document.querySelector('.services-section h2');
+
+      grid.classList.add('exit-animation');
+      heading.style.animation = 'popOut 0.5s ease forwards';
+
+      setTimeout(() => {
+        window.location.href = href;
+      }, 500); // wait for exit animation
+    });
+  });
+
+  const navToggle = document.querySelector('.nav-toggle');
+  const navRight = document.querySelector('.nav-right');
+
+  navToggle.addEventListener('click', () => {
+    navRight.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

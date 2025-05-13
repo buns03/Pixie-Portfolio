@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Justin Faderanga</title>
+  <link rel="stylesheet" href="css/about.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="home-link">Home</a>
+      </div>
+
+      <div class="nav-toggle">
+          <img src="css/assets/menu.png"/>
+        </div>
+
+      <ul class="nav-right">
+         <li><a href="about.html" class="active">About Me</a></li>
+          <li><a href="price.html">Pricelist</a></li>
+          <li><a href="rules.html">Rules</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="socials.html">Socials</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <div class="about-container">
+        <h2>Get To Know Me</h2>
+      <div class="profile-image">
+        <img src="css/assets/logo2.png" alt="Pixie Atelier" />
+      </div>
+      <div class="about-text">
+        <div class="card">
+          <p>Hello! I'm Ixchel Yaretzi, 
+            a 2nd Year BEED Student whose hobby revolves around editing 
+            and playing video games. I started editing in year 2018/2019 
+            and explored more when it comes to GFX in July 2024. 
+            Owning Pixie Atelier, I offer quality and affordable edits
+             that will surely meet my client's satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <script>
+    const links = document.querySelectorAll("nav a, .btn");
+    const heroText = document.querySelector(".about-text");
+    const heroImage = document.querySelector(".profile-image");
+
+    links.forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault(); // Prevent immediate navigation
+        const href = this.getAttribute("href");
+
+        // Add exit animations to content (image and text)
+        heroImage.style.animation = "slideOutLeft 0.5s forwards";
+        heroText.style.animation = "slideOutRight 0.5s forwards";
+
+        // Wait for animations to finish before navigating
+        setTimeout(() => {
+          window.location.href = href;
+        }, 500); // Match animation duration
+      });
+    });
+
+    const navToggle = document.querySelector('.nav-toggle');
+  const navRight = document.querySelector('.nav-right');
+
+  navToggle.addEventListener('click', () => {
+    navRight.classList.toggle('show');
+  });
+  </script>
+
+</body>
+</html>

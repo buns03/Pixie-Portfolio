@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <div class="nav-left">
+          <a href="index.html" class="home-link">Home</a>
+        </div>
+
+        <div class="nav-toggle">
+          <img src="css/assets/menu.png"/>
+        </div>
+
+        <ul class="nav-right">
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="price.html">Pricelist</a></li>
+          <li><a href="rules.html">Rules</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="socials.html">Socials</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="mainContent">
+      <main class="portfolio">
+        <section>
+          <h3>Sample Works</h3>
+          <div class="image-grid">
+            <img
+              src="css/assets/samples/1.png"
+              class="expandable"
+              alt="artwork1"
+            />
+            <img
+              src="css/assets/samples/2.png"
+              class="expandable"
+              alt="artwork2"
+            />
+            <img
+              src="css/assets/samples/3.png"
+              class="expandable"
+              alt="artwork3"
+            />
+            <img
+              src="css/assets/samples/4.jpg"
+              class="expandable"
+              alt="artwork4"
+            />
+            <img
+              src="css/assets/samples/5.jpg"
+              class="expandable"
+              alt="artwork5"
+            />
+            <img
+              src="css/assets/samples/6.jpg"
+              class="expandable"
+              alt="artwork6"
+            />
+            <img
+              src="css/assets/samples/7.png"
+              class="expandable"
+              alt="artwork7"
+            />
+            <img
+              src="css/assets/samples/8.png"
+              class="expandable"
+              alt="artwork8"
+            />
+            <img
+              src="css/assets/samples/9.png"
+              class="expandable"
+              alt="artwork9"
+            />
+            <img
+              src="css/assets/samples/10.png"
+              class="expandable"
+              alt="artwork10"
+            />
+            
+          </div>
+
+        </section>
+      </main>
+    </div>
+
+    <!-- Popup Modal -->
+    <div class="popup-overlay" id="popup">
+      <div class="popup-content">
+        <span class="close-btn" id="closePopup">&times;</span>
+        <img src="" alt="Expanded" id="popupImage" />
+      </div>
+    </div>
+
+    <div class="popup-gallery" id="stepPopup">
+      <div class="close-btn" id="closeStepPopup">&times;</div>
+      <img id="stepImage" src="" alt="Step View" />
+      <button id="prevBtn" class="nav-btn"><-</button>
+      <button id="nextBtn" class="nav-btn">-></button>
+    </div>
+
+    <div class="popup-overlay" id="galleryPopup">
+      <div class="popup-content">
+        <span class="close-btn" id="closeGallery">&times;</span>
+        <div id="galleryContent" class="gallery-content"></div>
+      </div>
+    </div>
+    <script src="script/portfolio.js"></script>
+
+  </body>
+</html>
