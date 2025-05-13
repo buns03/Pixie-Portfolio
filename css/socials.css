@@ -85,6 +85,7 @@ header {
     object-fit: cover;
     transition: transform 0.3s;
     margin: 0px;
+    margin-bottom: 30px;
 }
 
 .service-box img:hover {
