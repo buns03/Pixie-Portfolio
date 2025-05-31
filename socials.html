@@ -56,12 +56,6 @@
 
       e.preventDefault();
 
-      const grid = document.querySelector('.services-grid');
-      const heading = document.querySelector('.services-section h2');
-
-      grid.classList.add('exit-animation');
-      heading.style.animation = 'popOut 0.5s ease forwards';
-
       setTimeout(() => {
         window.location.href = href;
       }, 500); // wait for exit animation
