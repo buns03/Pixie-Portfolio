@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #322C32;
+    background: #26173F;
     color: white;
     overflow: hidden;
 }
@@ -27,7 +27,7 @@ header {
 .nav-left .home-link {
     font-size: 1.5em;
     font-weight: 700;
-    color: #DDAE6A;
+    color: #6B3CAE;
     text-decoration: none;
 }
 
@@ -45,14 +45,14 @@ header {
 }
 
 .nav-right li a.active {
-    color: #DDAE6A;
+    color: #6B3CAE;
     font-weight: 600;
 }
 
 
 .nav-right li a:hover,
 .nav-right li a.active {
-    color: #DDAE6A;
+    color: #6B3CAE;
 }
 
 .about-section {
@@ -91,7 +91,7 @@ header {
 }
 
 .card {
-    background-color: #DDAE6A;
+    background-color: #6B3CAE;
     padding: 30px 30px 20px;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -104,7 +104,7 @@ header {
 
 .card p {
     font-size: 1.3em;
-    color: #000;
+    color: #fff;
     line-height: 1.6;
 }
 
