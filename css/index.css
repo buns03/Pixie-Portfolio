@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #322C32;
+  background: #26173F;
   color: white;
   overflow: hidden;
 }
@@ -28,7 +28,7 @@ header {
 .nav-left .home-link {
   font-size: 1.5em;
   font-weight: 700;
-  color: #DDAE6A;
+  color: #6B3CAE;
   text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ header {
 }
 
 .nav-right li a:hover {
-  color: #DDAE6A;
+  color: #6B3CAE;
 }
 
 /* Animation keyframes */
@@ -162,7 +162,7 @@ header {
 }
 
 .hero-text h1 span {
-  color: #DDAE6A;
+  color: #6B3CAE;
 }
 
 .hero-text p {
@@ -172,7 +172,7 @@ header {
 }
 
 .btn {
-  background-color: #DDAE6A;
+  background-color: #DE94F9;
   color: white;
   padding: 12px 30px;
   text-decoration: none;
@@ -332,3 +332,4 @@ header {
     font-size: 0.9em;
   }
 }
+
