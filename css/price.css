@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #322C32;
+    background: #26173F;
     color: white;
     overflow: auto;
 }
@@ -28,7 +28,7 @@ header {
 .nav-left .home-link {
     font-size: 1.5em;
     font-weight: 700;
-    color: #DDAE6A;
+    color: #6B3CAE;
     text-decoration: none;
 }
 
@@ -46,14 +46,14 @@ header {
 }
 
 .nav-right li a.active {
-    color: #DDAE6A;
+    color: #6B3CAE;
     font-weight: 600;
 }
 
 
 .nav-right li a:hover,
 .nav-right li a.active {
-    color: #DDAE6A;
+    color: #6B3CAE;
 }
 
 .nav-toggle {
@@ -70,7 +70,7 @@ header {
 }
 
 .pricet-container {
-  background-color: #e2a956;
+  background-color: #6B3CAE;
   padding: 2rem;
   border-radius: 30px;
   max-width: 500px;
@@ -95,7 +95,7 @@ h2 {
 
 .accordion button.accordion-header {
   width: 100%;
-  background-color: #c3873f;
+  background-color: #DE94F9;
   color: #322C32;
   padding: 0.8rem 1rem;
   text-align: left;
@@ -108,11 +108,11 @@ h2 {
 }
 
 .accordion button.accordion-header:hover {
-  background-color: #a96f32;
+  background-color: #a96bbf;
 }
 
 .accordion-content {
-  background-color: #f8d1a0;
+  background-color: #ecbdfc;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
@@ -193,3 +193,4 @@ h2 {
     }
 
 }
+
