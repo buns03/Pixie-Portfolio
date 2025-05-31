@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #322C32;
+    background: #26173F;
     color: white;
     overflow: auto;
 }
@@ -27,7 +27,7 @@ header {
 .nav-left .home-link {
     font-size: 1.5em;
     font-weight: 700;
-    color: #DDAE6A;
+    color: #6B3CAE;
     text-decoration: none;
 }
 
@@ -45,14 +45,14 @@ header {
 }
 
 .nav-right li a.active {
-    color: #DDAE6A;
+    color: #6B3CAE;
     font-weight: 600;
 }
 
 
 .nav-right li a:hover,
 .nav-right li a.active {
-    color: #DDAE6A;
+    color: #6B3CAE;
 }
 
 .portfolio {
